@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F91942;}
+</style>
+<g>
+	<g>
+		<g>
+			<path class="st0" d="M456,40H40C17.9,40,0,57.9,0,80v288c0,22.1,17.9,40,40,40h104v32h-32v16h272v-16h-32v-32h104
+				c22.1,0,40-17.9,40-40V80C496,57.9,478.1,40,456,40z M336,440H160v-32h176V440z M480,368c0,13.2-10.8,24-24,24H40
+				c-13.2,0-24-10.8-24-24v-8h464V368z M480,344H16V80c0-13.2,10.8-24,24-24h416c13.2,0,24,10.8,24,24V344z"/>
+			<path class="st0" d="M32,328h432V72H32V328z M360,88h88v112h-88V88z M360,216h88v96h-88V216z M232,88h112v112H232V88z M344,216
+				v96H160v-96h56h16H344z M48,88h168v112H48V88z M48,216h96v96H48V216z"/>
+			<path class="st0" d="M64,184h80v-80H64V184z M80,120h48v48H80V120z"/>
+			<path class="st0" d="M288,104c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S310.1,104,288,104z M288,168
+				c-13.2,0-24-10.8-24-24s10.8-24,24-24s24,10.8,24,24S301.2,168,288,168z"/>
+			<rect x="160" y="104" class="st0" width="40" height="16"/>
+			<rect x="160" y="136" class="st0" width="40" height="16"/>
+			<rect x="160" y="168" class="st0" width="40" height="16"/>
+			<rect x="376" y="104" class="st0" width="56" height="16"/>
+			<rect x="376" y="136" class="st0" width="56" height="16"/>
+			<rect x="376" y="168" class="st0" width="56" height="16"/>
+			<path class="st0" d="M376,296h56v-64h-56V296z M392,248h24v32h-24V248z"/>
+			<path class="st0" d="M204,280h-28v16h28c15.5,0,28.6-11.1,31.2-26.4l1.4-8.5c1.3-7.6,7.7-13,15.4-13s14.1,5.5,15.4,13l1.4,8.6
+				c2.5,15.3,15.7,26.4,31.2,26.4h28v-16h-28c-7.7,0-14.1-5.5-15.4-13l-1.4-8.6c-2.5-15.3-15.7-26.4-31.2-26.4s-28.6,11.1-31.2,26.4
+				l-1.4,8.5C218.1,274.5,211.7,280,204,280z"/>
+			<path class="st0" d="M52.7,264L96,307.3l43.3-43.3L96,220.7L52.7,264z M96,284.7L75.3,264L96,243.3l20.7,20.7L96,284.7z"/>
+		</g>
+	</g>
+</g>
+</svg>

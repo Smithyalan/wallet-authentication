@@ -1,0 +1,155 @@
+// slider
+var owl = $('.owl-one').owlCarousel({
+    items: 4,
+    loop: true,
+    nav: true,
+    dots:true,
+    margin: 10,
+    autoplay: true,
+    smartSpeed: 800,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+});
+$('.play').on('click', function() {
+    owl.trigger('play.owl.autoplay', [1000])
+});
+$('.stop').on('click', function() {
+    owl.trigger('stop.owl.autoplay')
+});
+
+var owl = $('.owl-two').owlCarousel({
+    items: 4,
+    loop: true,
+    nav: true,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
+$('.play').on('click', function() {
+    owl.trigger('play.owl.autoplay', [1000])
+});
+$('.stop').on('click', function() {
+    owl.trigger('stop.owl.autoplay')
+});
+// mobile mega menu
+$(document).ready(function() {
+    // jQuery code
+    $("[data-trigger]").on("click", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var offcanvas_id = $(this).attr('data-trigger');
+        $(offcanvas_id).toggleClass("show");
+        $('body').toggleClass("offcanvas-active");
+        $(".screen-overlay").toggleClass("show");
+    });
+    // Close menu when pressing ESC
+    $(document).on('keydown', function(event) {
+        if(event.keyCode === 27) {
+            $(".mobile-offcanvas").removeClass("show");
+            $("body").removeClass("overlay-active");
+        }
+    });
+    $(".btn-close, .screen-overlay").click(function(e) {
+        $(".screen-overlay").removeClass("show");
+        $(".mobile-offcanvas").removeClass("show");
+        $("body").removeClass("offcanvas-active");
+    });
+});
+var $element = $('.each-event, .title');
+var $window = $(window);
+$window.on('scroll resize', check_for_fade);
+$window.trigger('scroll');
+
+function check_for_fade() {
+    var window_height = $window.height();
+    $.each($element, function(event) {
+        var $element = $(this);
+        var element_height = $element.outerHeight();
+        var element_offset = $element.offset().top;
+        space = window_height - (element_height + element_offset - $(window).scrollTop());
+        if(space < 60) {
+            $element.addClass("non-focus");
+        } else {
+            $element.removeClass("non-focus");
+        }
+    });
+};
+//scrool sticky navbar
+$(function() {
+    var header = $(".section-header");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if(scroll >= 100) {
+            header.addClass("scrolled");
+        } else {
+            header.removeClass("scrolled");
+        }
+    });
+});
+// aos
+
+// show more
+
+
+$(function () {
+        $(".box_model").slice(0, 8).show();
+        $("body").on('click touchstart', '.load-more', function (e) {
+            e.preventDefault();
+            $(".box_model:hidden").slice(0, 8).slideDown();
+            if ($(".box_model:hidden").length == 0) {
+                $(".load-more").css('visibility', 'hidden');
+            }
+            // $('html,body').animate({
+            //     scrollTop: $(this).offset().top
+            // }, 1000);
+        });
+    });
+$(function () {
+        $(".service-single-box").slice(0, 8).show();
+        $("body").on('click touchstart', '.load-more1', function (e) {
+            e.preventDefault();
+            $(".service-single-box:hidden").slice(0, 8).slideDown();
+            if ($(".service-single-box:hidden").length == 0) {
+                $(".load-more1").css('visibility', 'hidden');
+            }
+            $(".service-single-box:hidden").slice(0, 9).slideDown();
+            if ($(".service-single-box:hidden").length == 0) {
+                $(".load-more1").css('visibility', 'hidden');
+            }
+            // $('html,body').animate({
+            //     scrollTop: $(this).offset().top
+            // }, 1000);
+        });
+    });
+
+$(document).ready(function(){
+    $(".dropdown").hover(function(){
+        var dropdownMenu = $(this).children(".dropdown-menu");
+        if(dropdownMenu.is(":visible")){
+            dropdownMenu.parent().toggleClass("open");
+        }
+    });
+}); 
